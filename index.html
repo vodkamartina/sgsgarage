@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS Garage | Bursa</title>
+    <link rel="shortcut icon" href="design/sgsgaragelogored.png" type="image/x-icon" >
+    <link rel="stylesheet" href="design/index.css">
+    <link rel="stylesheet" href="design/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="slider-container swiper mySwiper">
+            <div class="slider-content swiper-wrapper">
+                <div class='slides swiper-slide'>
+                    <img src='design/slider1.JPG'>
+                    <div class='img_overlay'>
+                        <img src="design/sgsgaragelogo.png" alt="">
+                        <h1> SGS Garage</h1>
+                        <h3> SİTEMİZ YAKINDA SİZLERLE</h3>
+                    </div>
+                </div>
+                <div class='slides swiper-slide'>
+                    <img src='design/slider2.PNG'>
+                    <div class='img_overlay'>
+                        <img src="design/sgsgaragelogo.png" alt="">
+                        <h1> SGS Garage</h1>
+                        <h3> SİTEMİZ YAKINDA SİZLERLE</h3>
+                    </div>
+                </div>
+                <div class='slides swiper-slide'>
+                    <img src='design/slider3.PNG'>
+                    <div class='img_overlay'>
+                        <img src="design/sgsgaragelogo.png" alt="">
+                        <h1> SGS Garage</h1>
+                        <h3> SİTEMİZ YAKINDA SİZLERLE</h3>
+                    </div>
+                </div>
+                <div class='slides swiper-slide'>
+                    <img src='design/slider4.jpg'>
+                    <div class='img_overlay'>
+                        <img src="design/sgsgaragelogo.png" alt="">
+                        <h1> SGS Garage</h1>
+                        <h3> SİTEMİZ YAKINDA SİZLERLE</h3>
+                    </div>
+                </div>
+                <div class='slides swiper-slide'>
+                    <img src='design/slider5.jpg'>
+                    <div class='img_overlay'>
+                        <img src="design/sgsgaragelogo.png" alt="">
+                        <h1> SGS Garage</h1>
+                        <h3> SİTEMİZ YAKINDA SİZLERLE</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <p style="font-size: 8px; opacity: .2; color: white;">copyright &copy;2023 BH designed by <span>Code w Huz</span></p>
+    <!-- SCRİPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="design/index.js"></script>
+    <script src="design/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0 - 400],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+    </script>
+    <!-- SCRİPT -->
+</body>
+
+</html>
